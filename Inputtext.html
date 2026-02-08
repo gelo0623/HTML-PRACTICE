@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>INPUTTING BY USER</title>
+</head>
+<body>
+
+    <!--You use form if input-->
+    <!--to get what you want the user o type do name="" -->
+
+    <form action="action_page.php" method="POST">
+
+        <!--label frst and use input-->
+        <!--use for="fname to label and for input do id="fname"so that you can click the label"-->
+        <!--You can also add the command required so that they will be needed to input something-->
+        <div>
+        <label>First name:</label>
+        <input type="text" required>
+        </div>
+<br>
+        <div>
+        <!--able to click label-->
+        <label for="sname">Second name:</label>
+        <input type="text" id="sname" required>
+        </div>
+<br>
+        <div>
+        <!--Text in input-->
+        <label>Last name:</label>
+        <input type="text" placeholder="Last name boi" required>
+        </div>
+
+        <br>
+
+        <!--For email-->
+        <div>
+<label for="email">Email:</label>
+<input type="email" id="email" max="15" required>
+        </div>
+
+        <br>
+        <div>
+        <!--Now this is for password that will be hidden-->
+        <!--max is for how many characters only-->
+
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="pass" max="12" required>
+        </div>
+
+<br>
+
+<div>
+    <!--For telephone number-->
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="(63)+">
+
+</div>
+
+<br>
+
+<div>
+<!--For date-->
+<label for="bdate">Birthdate:</label>
+<input type="date" id="bdate" name="bdate">
+
+</div>
+        <br>
+
+        <div>
+<!--for numbers quantity decrease or increase-->
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="0" max="100" value="1">
+        </div>
+
+
+        <br>
+<div>
+    <!--For titles-->
+    <!--We use radio for like cirlce shade and all the same name for only 1-->
+    <label for="title">Title:</label>
+    <label for="Mr.">Mr.</label>
+    <input type="radio" id="Mr." name="title" value="Mr.">
+
+    <label for="Mrs.">Mrs.</label>
+    <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+    <label for="PhD.">PhD.</label>
+    <input type="radio" id="PhD." name="title" value="PhD.">
+
+
+</div>
+
+<br>
+<div>
+<!--SELECT TAG-->
+<label for="payment">Payment:</label>
+<select id="payment" name="payment">
+    <option value="Your body">Your body</option>
+    <option value="Kiss me">Kiss me</option>
+    <option value="Cash">Cash</option>
+</select>
+
+</div>
+
+<br>
+<div>
+<!--Checkbox-->
+<label for="Love me?">Love me?:</label>
+<input type="checkbox" id="Love me" name="Love me">
+
+</div>
+
+
+        <br>
+        <!--To remove  input and to submit go to form action-->
+        <div>
+            <input type="reset">
+            <input type="submit">
+        </div>
+
+    </form>
+    
+</body>
+</html>
